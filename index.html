@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Air University Merit Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <button id="menuToggle" class="menu-toggle">&#9776;</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="calculate.html">Calculator</a>
+        <a href="merits.html">Merits</a>
+        <a href="buses.html">Buses Route</a>
+        <a href="whatsapp.html">WhatsApp</a>
+        <a href="pastpapers.html">Previous Papers</a>
+        <a href="projects.html">Projects</a>
+        <a href="faqs.html">FAQs</a>
+      </div>
+
+      <div class="theme-toggle-wrapper">
+        <div class="icon sun-icon">
+          <!-- ☀️ Sun Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 4a1 1 0 0 1 1-1h0a1 1 0 1 1-2 0h0a1 1 0 0 1 1 1Zm0 16a1 1 0 1 1 0 2h0a1 1 0 0 1 0-2Zm8-8a1 1 0 1 1 2 0h0a1 1 0 0 1-2 0Zm-16 0a1 1 0 0 1 0-2h0a1 1 0 1 1 0 2Zm12.95 7.07a1 1 0 0 1 1.41 0h0a1 1 0 0 1-1.41 1.41h0a1 1 0 0 1 0-1.41Zm-11.31 0a1 1 0 0 1 0 1.41h0a1 1 0 0 1-1.41-1.41h0a1 1 0 0 1 1.41 0Zm11.31-11.31a1 1 0 0 1 1.41-1.41h0a1 1 0 0 1-1.41 1.41Zm-11.31 0A1 1 0 0 1 4.63 4.63h0a1 1 0 0 1 1.41 1.41ZM12 6a6 6 0 1 1 0 12A6 6 0 0 1 12 6Z"/>
+          </svg>
+        </div>
+
+        <!-- Toggle Switch -->
+        <label class="theme-toggle">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider"></span>
+        </label>
+
+        <div class="icon moon-icon">
+          <!-- 🌙 Moon Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79Z"/>
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1>Welcome to Air University Merit Calculator</h1>
+      <p>Your one-stop tool to calculate AU merit, view last year’s merit trends, and join study groups.</p>
+      <div class="hero-buttons">
+        <a href="calculate.html" class="btn">Calculate Merit</a>
+        <a href="#features" class="btn secondary">Explore Features</a>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="feature" onclick="location.href='calculate.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6Zm0 2h12v4H6V4Zm0 6h12v10H6V10Zm2 2v2h2v-2H8Zm0 4v2h2v-2H8Zm4-4v2h2v-2h-2Zm0 4v2h2v-2h-2Zm4-4v6h-2v-6h2Z"/>
+        </svg>
+        <h2>Accurate Merit Calculator</h2>
+        <p>Based on official AU weightage: Matric 15%, Inter 35%, Test 50%</p>
+      </div>
+
+      <div class="feature" onclick="location.href='merits.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 3v18h18v-2H5V3H3Zm16.5 2.5-4.5 6-4-5-5.5 7 1.5 1 4-5 4 5 6-8-1.5-1Z"/>
+        </svg>
+        <h2>Last Year Merits</h2>
+        <p>View closing merit scores by department and campus.</p>
+      </div>
+
+      <div class="feature" onclick="location.href='buses.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 16v1a1 1 0 0 0 1 1v1a1 1 0 0 0 2 0v-1h10v1a1 1 0 0 0 2 0v-1a1 1 0 0 0 1-1v-1H4Zm0-2h16V6a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v8Zm2-7h12v2H6V7Zm0 4h12v2H6v-2Z"/>
+        </svg>
+        <h2>Buses Route</h2>
+        <p>View bus routes, stops, and timings for Air University transport.</p>
+      </div>
+
+      <div class="feature" onclick="location.href='whatsapp.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"/>
+        </svg>
+        <h2>Join WhatsApp Group</h2>
+        <p>Get help, guidance, and updates from fellow applicants.</p>
+      </div>
+
+      <div class="feature" onclick="location.href='pastpapers.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm1 7V3.5L18.5 9H15Zm-1 9H8v-2h6v2Zm2-4H8v-2h8v2Z"/>
+        </svg>
+        <h2>Past Papers</h2>
+        <p>Practice with previous AU entry test papers and solutions.</p>
+      </div>
+
+      <div class="feature" onclick="location.href='projects.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 21h6v-1H9v1Zm3-19a7 7 0 0 0-3.6 13.1c.2.1.4.4.4.7v.2c0 .6.4 1 1 1h4c.6 0 1-.4 1-1v-.2c0-.3.2-.6.4-.7A7 7 0 0 0 12 2Z"/>
+        </svg>
+        <h2>Student Projects</h2>
+        <p>Browse mini and final year projects for inspiration.</p>
+      </div>
+
+      <div class="feature" onclick="location.href='faqs.html'">
+        <svg class="feature-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11 18h2v-2h-2v2Zm1-16C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2Zm1 14h-2v-2h2v2Zm1.1-4.4-.9.9V13h-2v-1.5l1.4-1.4c.4-.4.6-.9.6-1.4 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.2 1.8-4 4-4s4 1.8 4 4c0 .8-.3 1.6-.9 2.2Z"/>
+        </svg>
+        <h2>Admission FAQs</h2>
+        <p>Find answers to frequently asked questions about the process.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <p class="bottom-note">© 2025 Air University Helper | All rights reserved ❤️</p>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

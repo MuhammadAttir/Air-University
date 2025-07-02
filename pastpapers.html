@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Past Papers – Air University</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <button id="menuToggle" class="menu-toggle">&#9776;</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="calculate.html">Calculator</a>
+        <a href="merits.html">Merits</a>
+        <a href="buses.html">Buses Route</a>
+        <a href="whatsapp.html">WhatsApp</a>
+        <a href="pastpapers.html" class="active">Previous Papers</a>
+        <a href="projects.html">Projects</a>
+        <a href="faqs.html">FAQs</a>
+      </div>
+
+      <div class="theme-toggle-wrapper">
+        <div class="icon sun-icon">
+          <!-- ☀️ Sun Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 4a1 1 0 0 1 1-1h0a1 1 0 1 1-2 0h0a1 1 0 0 1 1 1Zm0 16a1 1 0 1 1 0 2h0a1 1 0 0 1 0-2Zm8-8a1 1 0 1 1 2 0h0a1 1 0 0 1-2 0Zm-16 0a1 1 0 0 1 0-2h0a1 1 0 1 1 0 2Zm12.95 7.07a1 1 0 0 1 1.41 0h0a1 1 0 0 1-1.41 1.41h0a1 1 0 0 1 0-1.41Zm-11.31 0a1 1 0 0 1 0 1.41h0a1 1 0 0 1-1.41-1.41h0a1 1 0 0 1 1.41 0Zm11.31-11.31a1 1 0 0 1 1.41-1.41h0a1 1 0 0 1-1.41 1.41Zm-11.31 0A1 1 0 0 1 4.63 4.63h0a1 1 0 0 1 1.41 1.41ZM12 6a6 6 0 1 1 0 12A6 6 0 0 1 12 6Z"/>
+          </svg>
+        </div>
+
+        <label class="theme-toggle">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider"></span>
+        </label>
+
+        <div class="icon moon-icon">
+          <!-- 🌙 Moon Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79Z"/>
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="coming-soon" style="text-align: center; margin-top: 80px;">
+      <h1>📚 Past Papers</h1>
+      <p>Coming soon...</p>
+    </main>
+
+    <!-- Footer -->
+    <p class="bottom-note">
+      © 2025 Air University Helper | All rights reserved ❤️
+    </p>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
